@@ -73,12 +73,12 @@
 
   <!-- NAVBAR -->
   <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-3 md:py-5 flex items-center justify-between">
 
       <!-- PREMIUM LOGO -->
-      <div class="flex items-center gap-4 group cursor-pointer">
+      <div class="flex items-center gap-2 md:gap-4 group cursor-pointer">
         <!-- EMBLEM -->
-        <div class="relative w-14 h-14 flex items-center justify-center">
+        <div class="relative w-10 h-10 md:w-14 md:h-14 flex items-center justify-center transform scale-75 md:scale-100 origin-center">
           <!-- LEFT STROKE -->
           <div class="absolute left-[8px] top-[4px] w-[6px] h-[42px] bg-black rotate-[28deg] rounded-full"></div>
           <!-- RIGHT STROKE -->
@@ -88,12 +88,12 @@
         </div>
         <!-- TEXT -->
         <div class="leading-none">
-          <h1 class="heading-font text-[42px] tracking-[1px] text-black uppercase group-hover:text-[#C0392B] transition duration-300">
+          <h1 class="heading-font text-[28px] md:text-[42px] tracking-[1px] text-black uppercase group-hover:text-[#C0392B] transition duration-300">
             Valor
           </h1>
-          <div class="flex items-center gap-3 mt-1">
-            <div class="h-[2px] w-8 bg-[#C0392B]"></div>
-            <p class="text-[10px] tracking-[6px] text-[#C0392B] font-semibold uppercase">
+          <div class="flex items-center gap-2 md:gap-3 mt-0.5 md:mt-1">
+            <div class="h-[1.5px] md:h-[2px] w-5 md:w-8 bg-[#C0392B]"></div>
+            <p class="text-[7px] md:text-[10px] tracking-[4px] md:tracking-[6px] text-[#C0392B] font-semibold uppercase">
               Motors
             </p>
           </div>
@@ -108,7 +108,7 @@
         <a href="#contact" class="hover:text-[#C0392B] transition">Contact</a>
       </div>
 
-      <a href="#contact" class="bg-[#C0392B] hover:bg-black transition-all duration-300 text-white px-7 py-3 rounded-full text-sm font-semibold shadow-lg hover:scale-105 inline-block text-center">
+      <a href="#contact" class="bg-[#C0392B] hover:bg-black transition-all duration-300 text-white px-5 py-2.5 md:px-7 md:py-3 rounded-full text-xs md:text-sm font-semibold shadow-lg hover:scale-105 inline-block text-center whitespace-nowrap">
         Book Viewing
       </a>
 
@@ -150,13 +150,13 @@
         <div
           data-aos="fade-up"
           data-aos-delay="300"
-          class="flex flex-wrap gap-5 mt-8 lg:mt-10"
+          class="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 md:mt-10"
         >
-          <a href="#inventory" class="bg-[#C0392B] hover:scale-105 transition duration-300 text-white px-8 py-4 rounded-full font-semibold red-glow inline-block">
+          <a href="#inventory" class="bg-[#C0392B] hover:scale-105 transition duration-300 text-white px-6 py-3.5 md:px-8 md:py-4 rounded-full font-semibold red-glow inline-block text-center text-sm md:text-base">
             Browse Inventory
           </a>
 
-          <a href="#inventory" class="border border-white/30 hover:bg-white hover:text-black transition text-white px-8 py-4 rounded-full font-semibold inline-block">
+          <a href="#inventory" class="border border-white/30 hover:bg-white hover:text-black transition text-white px-6 py-3.5 md:px-8 md:py-4 rounded-full font-semibold inline-block text-center text-sm md:text-base">
             Watch Showcase
           </a>
         </div>
@@ -196,7 +196,7 @@
             Featured Collection
           </p>
 
-          <h2 class="heading-font text-5xl uppercase leading-none">
+          <h2 class="heading-font text-4xl md:text-5xl uppercase leading-none">
             Built For Adventure <br> Engineered For Luxury
           </h2>
         </div>
@@ -222,7 +222,7 @@
               <img
                 src="assets/jetour%20t2.png"
                 alt="Jetour T2"
-                class="h-[280px] w-full object-cover"
+                class="h-[200px] md:h-[280px] w-full object-cover"
               >
             </div>
 
@@ -281,7 +281,7 @@
               <img
                 src="assets/Tank%20700.png"
                 alt="GWM Tank 700"
-                class="h-[280px] w-full object-cover"
+                class="h-[200px] md:h-[280px] w-full object-cover"
               >
             </div>
 
@@ -340,7 +340,7 @@
               <img
                 src="assets/baw%20212.png"
                 alt="BAW 212"
-                class="h-[280px] w-full object-cover"
+                class="h-[200px] md:h-[280px] w-full object-cover"
               >
             </div>
 
@@ -395,7 +395,7 @@
       
       <div class="text-center mb-16" data-aos="fade-up">
         <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-4 font-semibold">₵500,000+ Exclusivity</p>
-        <h2 class="heading-font text-5xl uppercase leading-none text-black">Tactical Luxury Cockpit</h2>
+        <h2 class="heading-font text-4xl md:text-5xl uppercase leading-none text-black">Tactical Luxury Cockpit</h2>
         <p class="text-gray-500 text-lg mt-4 max-w-xl mx-auto">Explore the extreme engineering, high-definition screen spaces, and bespoke tailoring designed for elite off-road command.</p>
       </div>
 
@@ -426,7 +426,7 @@
         </div>
 
         <!-- Image & Technical Spec Card - col-span 7 -->
-        <div class="lg:col-span-7 relative rounded-[24px] overflow-hidden shadow-2xl h-[450px] group">
+        <div class="lg:col-span-7 relative rounded-[24px] overflow-hidden shadow-2xl h-[350px] md:h-[450px] group">
           <!-- Image -->
           <img id="gallery-img" src="assets/cockpit_dashboard.png" class="w-full h-full object-cover transition-all duration-700 ease-in-out" alt="High-Spec Cockpit" />
           
@@ -476,7 +476,7 @@
             Why Valor Motors
           </p>
 
-          <h2 class="heading-font text-6xl uppercase leading-none">
+          <h2 class="heading-font text-4xl md:text-6xl uppercase leading-none">
             Dominance <br> In Every Terrain
           </h2>
 
@@ -541,7 +541,7 @@
             VALOR FLAGSHIP SHOWROOM
           </p>
 
-          <h2 class="heading-font text-5xl lg:text-6xl uppercase leading-none mb-6 text-black">
+          <h2 class="heading-font text-4xl md:text-5xl lg:text-6xl uppercase leading-none mb-6 text-black">
             Visit Our <br> Showroom
           </h2>
 
@@ -604,7 +604,7 @@
         </div>
 
         <!-- Right: Interactive Google Map Embed (col-span 7) -->
-        <div class="lg:col-span-7 w-full h-[450px]" data-aos="fade-left">
+        <div class="lg:col-span-7 w-full h-[300px] md:h-[450px]" data-aos="fade-left">
           <div class="w-full h-full rounded-[32px] overflow-hidden border border-gray-200 shadow-2xl relative bg-white">
             <!-- Real Google Map focused near China Mall, SSNIT & Fire Station (Ashaiman) -->
             <iframe 
@@ -634,7 +634,7 @@
         Begin Your Journey
       </p>
 
-      <h2 class="heading-font text-6xl md:text-8xl uppercase leading-none">
+      <h2 class="heading-font text-4xl md:text-6xl lg:text-8xl uppercase leading-none">
         Rugged Power <br> Meets Supreme Luxury
       </h2>
 
