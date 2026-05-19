@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valor Motors | Premium Rugged Luxury & Off-Road SUVs</title>
+  <meta name="description" content="Discover Valor Motors - featuring premium tactical SUVs and rugged off-road machines including Jetour T2, Tank 700, and BAW 212. Built for adventure, engineered for luxury." />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .heading-font {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .hero-gradient {
+      background:
+      linear-gradient(to right, rgba(0,0,0,.82), rgba(0,0,0,.35)),
+      url('public/gwm%20tank%20300_1.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .glass {
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .car-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .car-card img {
+      transition: 0.6s ease;
+    }
+
+    .red-glow {
+      box-shadow: 0 0 30px rgba(192,57,43,.35);
+    }
+
+    .noise::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:url("https://grainy-gradients.vercel.app/noise.svg");
+      opacity:.08;
+      pointer-events:none;
+    }
+  </style>
+</head>
+
+<body class="text-black">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+
+      <!-- PREMIUM LOGO -->
+      <div class="flex items-center gap-4 group cursor-pointer">
+        <!-- EMBLEM -->
+        <div class="relative w-14 h-14 flex items-center justify-center">
+          <!-- LEFT STROKE -->
+          <div class="absolute left-[8px] top-[4px] w-[6px] h-[42px] bg-black rotate-[28deg] rounded-full"></div>
+          <!-- RIGHT STROKE -->
+          <div class="absolute right-[8px] top-[4px] w-[6px] h-[42px] bg-[#C0392B] rotate-[-28deg] rounded-full"></div>
+          <!-- CENTER CUT -->
+          <div class="absolute top-[18px] w-[10px] h-[24px] bg-white rounded-full"></div>
+        </div>
+        <!-- TEXT -->
+        <div class="leading-none">
+          <h1 class="heading-font text-[42px] tracking-[1px] text-black uppercase group-hover:text-[#C0392B] transition duration-300">
+            Valor
+          </h1>
+          <div class="flex items-center gap-3 mt-1">
+            <div class="h-[2px] w-8 bg-[#C0392B]"></div>
+            <p class="text-[10px] tracking-[6px] text-[#C0392B] font-semibold uppercase">
+              Motors
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-10 text-sm font-medium">
+        <a href="#inventory" class="hover:text-[#C0392B] transition">Inventory</a>
+        <a href="#gallery" class="hover:text-[#C0392B] transition">Cockpit Experience</a>
+        <a href="#why-valor" class="hover:text-[#C0392B] transition">Why Valor</a>
+        <a href="#about" class="hover:text-[#C0392B] transition">Showroom Location</a>
+        <a href="#contact" class="hover:text-[#C0392B] transition">Contact</a>
+      </div>
+
+      <a href="#contact" class="bg-[#C0392B] hover:bg-black transition-all duration-300 text-white px-7 py-3 rounded-full text-sm font-semibold shadow-lg hover:scale-105 inline-block text-center">
+        Book Viewing
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-gradient min-h-screen flex items-center relative noise">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24 lg:pt-36 lg:pb-32 w-full flex flex-col justify-center">
+
+      <div class="max-w-3xl">
+
+        <p
+          data-aos="fade-up"
+          class="uppercase tracking-[5px] text-gray-300 text-xs lg:text-sm mb-4"
+        >
+          Premium Rugged Off-Roaders & Tactical SUVs
+        </p>
+
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="heading-font text-white leading-[0.95] text-6xl md:text-8xl uppercase"
+        >
+          Power. <br>
+          Presence. <br>
+          Prestige.
+        </h1>
+
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-gray-300 text-base lg:text-lg mt-6 max-w-xl leading-relaxed"
+        >
+          Curated elite tactical SUVs and rugged off-road machines for those who demand ultimate presence, unmatched capability, and uncompromising luxury.
+        </p>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="flex flex-wrap gap-5 mt-8 lg:mt-10"
+        >
+          <a href="#inventory" class="bg-[#C0392B] hover:scale-105 transition duration-300 text-white px-8 py-4 rounded-full font-semibold red-glow inline-block">
+            Browse Inventory
+          </a>
+
+          <a href="#inventory" class="border border-white/30 hover:bg-white hover:text-black transition text-white px-8 py-4 rounded-full font-semibold inline-block">
+            Watch Showcase
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Floating stats -->
+      <div
+        data-aos="fade-left"
+        class="absolute bottom-12 right-10 hidden xl:flex gap-6"
+      >
+
+        <div class="glass border border-white/10 rounded-3xl p-6 text-white">
+          <p class="text-4xl font-bold">150+</p>
+          <p class="text-sm text-gray-300 mt-2">Rugged Machines</p>
+        </div>
+
+        <div class="glass border border-white/10 rounded-3xl p-6 text-white">
+          <p class="text-4xl font-bold">12+</p>
+          <p class="text-sm text-gray-300 mt-2">Years Experience</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED CARS -->
+  <section id="inventory" class="py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+
+        <div>
+          <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-4">
+            Featured Collection
+          </p>
+
+          <h2 class="heading-font text-5xl uppercase leading-none">
+            Built For Adventure <br> Engineered For Luxury
+          </h2>
+        </div>
+
+        <button class="border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition self-start md:self-auto">
+          Explore All
+        </button>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+        <!-- CARD 1: JETOUR T2 (DARK CARD) -->
+        <div
+          data-aos="fade-up"
+          class="car-card bg-[#111111] rounded-[32px] overflow-hidden text-white group flex flex-col justify-between"
+        >
+          <div>
+            <div class="overflow-hidden relative">
+              <span class="absolute top-4 left-4 z-10 bg-[#C0392B] text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                Active Explorer
+              </span>
+              <img
+                src="public/jetour%20t2.png"
+                alt="Jetour T2"
+                class="h-[280px] w-full object-cover"
+              >
+            </div>
+
+            <div class="p-7">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <span class="text-xs text-[#C0392B] font-bold uppercase tracking-widest block mb-1">JETOUR</span>
+                  <h3 class="heading-font text-3xl uppercase leading-tight">
+                    T2 SUV
+                  </h3>
+                </div>
+                <span class="text-[#C0392B] font-semibold text-xl pt-1">
+                  $44K+
+                </span>
+              </div>
+
+              <p class="text-gray-400 text-sm mt-3 line-clamp-2 leading-relaxed">
+                A masterpiece of rugged aesthetics and off-road intelligence, built to conquer all terrains in premium comfort.
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-gray-400 mt-6 pt-6 border-t border-white/10">
+                <div>
+                  <p class="font-bold text-white">254 HP</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Power</p>
+                </div>
+                <div>
+                  <p class="font-bold text-white">390 N·m</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Torque</p>
+                </div>
+                <div>
+                  <p class="font-bold text-white">XWD</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Drive</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-7 pb-7">
+            <button class="bg-[#C0392B] w-full py-4 rounded-2xl font-semibold hover:bg-white hover:text-black transition text-sm">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2: TANK 700 (LIGHT CARD) -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="car-card bg-[#f5f5f5] rounded-[32px] overflow-hidden text-black group flex flex-col justify-between"
+        >
+          <div>
+            <div class="overflow-hidden relative">
+              <span class="absolute top-4 left-4 z-10 bg-black text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                Tactical Flagship
+              </span>
+              <img
+                src="public/Tank%20700.png"
+                alt="GWM Tank 700"
+                class="h-[280px] w-full object-cover"
+              >
+            </div>
+
+            <div class="p-7">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <span class="text-xs text-[#C0392B] font-bold uppercase tracking-widest block mb-1">GWM TANK</span>
+                  <h3 class="heading-font text-3xl uppercase leading-tight text-black">
+                    Tank 700
+                  </h3>
+                </div>
+                <span class="text-[#C0392B] font-semibold text-xl pt-1">
+                  $89K+
+                </span>
+              </div>
+
+              <p class="text-gray-600 text-sm mt-3 line-clamp-2 leading-relaxed">
+                The pinnacle of high-end hybrid off-road luxury. Massive road presence meets extreme engineering and hybrid power.
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-gray-600 mt-6 pt-6 border-t border-gray-200">
+                <div>
+                  <p class="font-bold text-black">516 HP</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-400">Power</p>
+                </div>
+                <div>
+                  <p class="font-bold text-black">850 N·m</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-400">Torque</p>
+                </div>
+                <div>
+                  <p class="font-bold text-black">Hi4-T 4WD</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-400">System</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-7 pb-7">
+            <button class="bg-black text-white w-full py-4 rounded-2xl font-semibold hover:bg-[#C0392B] transition text-sm">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3: BAW 212 (DARK CARD) -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="250"
+          class="car-card bg-[#111111] rounded-[32px] overflow-hidden text-white group flex flex-col justify-between"
+        >
+          <div>
+            <div class="overflow-hidden relative">
+              <span class="absolute top-4 left-4 z-10 bg-[#C0392B] text-white text-[11px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                Tactical Retro
+              </span>
+              <img
+                src="public/baw%20212.png"
+                alt="BAW 212"
+                class="h-[280px] w-full object-cover"
+              >
+            </div>
+
+            <div class="p-7">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <span class="text-xs text-[#C0392B] font-bold uppercase tracking-widest block mb-1">BAW</span>
+                  <h3 class="heading-font text-3xl uppercase leading-tight">
+                    BAW 212
+                  </h3>
+                </div>
+                <span class="text-[#C0392B] font-semibold text-xl pt-1">
+                  $29K+
+                </span>
+              </div>
+
+              <p class="text-gray-400 text-sm mt-3 line-clamp-2 leading-relaxed">
+                An iconic classic completely reborn. A mechanical beast featuring modern comfort and legendary off-road reliability.
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 text-center text-xs text-gray-400 mt-6 pt-6 border-t border-white/10">
+                <div>
+                  <p class="font-bold text-white">248 HP</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Power</p>
+                </div>
+                <div>
+                  <p class="font-bold text-white">410 N·m</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Torque</p>
+                </div>
+                <div>
+                  <p class="font-bold text-white">8AT / 4WD</p>
+                  <p class="text-[9px] uppercase tracking-wider mt-0.5 text-gray-500">Drivetrain</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-7 pb-7">
+            <button class="bg-[#C0392B] w-full py-4 rounded-2xl font-semibold hover:bg-white hover:text-black transition text-sm">
+              View Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE HIGH-SPEC COCKPIT GALLERY (₵500,000+ EXCLUSIVITY) -->
+  <section id="gallery" class="py-28 bg-gray-50 border-t border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      
+      <div class="text-center mb-16" data-aos="fade-up">
+        <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-4 font-semibold">₵500,000+ Exclusivity</p>
+        <h2 class="heading-font text-5xl uppercase leading-none text-black">Tactical Luxury Cockpit</h2>
+        <p class="text-gray-500 text-lg mt-4 max-w-xl mx-auto">Explore the extreme engineering, high-definition screen spaces, and bespoke tailoring designed for elite off-road command.</p>
+      </div>
+
+      <!-- Gallery Container -->
+      <div class="grid lg:grid-cols-12 gap-12 items-center bg-white rounded-[32px] p-8 lg:p-12 shadow-2xl border border-gray-100" data-aos="fade-up">
+        
+        <!-- Interactive Navigation (Tab List) - col-span 5 -->
+        <div class="lg:col-span-5 flex flex-col gap-4">
+          
+          <button onclick="switchTab('screen')" id="btn-screen" class="tab-btn text-left p-6 rounded-2xl border-2 border-[#C0392B] bg-[#C0392B]/5 transition duration-300 group">
+            <span class="text-[#C0392B] font-bold text-xs uppercase tracking-widest block mb-1">COMMAND CENTER</span>
+            <h4 class="heading-font text-2xl uppercase text-black group-hover:text-[#C0392B]">15.6" Curved Smart Screen</h4>
+            <p class="text-gray-500 text-xs mt-2">Ultra-responsive intelligent dashboard with direct off-road diagnostic systems, Snapdragon processing, and hybrid flow monitors.</p>
+          </button>
+
+          <button onclick="switchTab('cabin')" id="btn-cabin" class="tab-btn text-left p-6 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition duration-300 group">
+            <span class="text-gray-400 font-bold text-xs uppercase tracking-widest block mb-1">VIP CABIN</span>
+            <h4 class="heading-font text-2xl uppercase text-black group-hover:text-[#C0392B]">Premium Nappa Leather</h4>
+            <p class="text-gray-500 text-xs mt-2">Ergonomic off-road seating featuring active multi-point muscle massage, active ventilation, and high-density memory cushions.</p>
+          </button>
+
+          <button onclick="switchTab('console')" id="btn-console" class="tab-btn text-left p-6 rounded-2xl border-2 border-transparent bg-gray-50 hover:bg-gray-100 transition duration-300 group">
+            <span class="text-gray-400 font-bold text-xs uppercase tracking-widest block mb-1">TACTICAL INTERIOR</span>
+            <h4 class="heading-font text-2xl uppercase text-black group-hover:text-[#C0392B]">Command Console</h4>
+            <p class="text-gray-500 text-xs mt-2">Physical drive toggles, pneumatic high-clearance suspension buttons, locking differential knobs, and dual-zone climate dials.</p>
+          </button>
+
+        </div>
+
+        <!-- Image & Technical Spec Card - col-span 7 -->
+        <div class="lg:col-span-7 relative rounded-[24px] overflow-hidden shadow-2xl h-[450px] group">
+          <!-- Image -->
+          <img id="gallery-img" src="public/cockpit_dashboard.png" class="w-full h-full object-cover transition-all duration-700 ease-in-out" alt="High-Spec Cockpit" />
+          
+          <!-- Hover Specs Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-8 lg:p-12 text-white">
+            <div id="gallery-spec-badge" class="bg-[#C0392B] text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full w-max mb-4">
+              8-Core Snapdragon Chipset
+            </div>
+            <h3 id="gallery-title" class="heading-font text-3xl lg:text-4xl uppercase leading-none mb-3">15.6-Inch Panoramic Cockpit</h3>
+            <p id="gallery-desc" class="text-gray-300 text-sm max-w-xl leading-relaxed">Experience lag-free navigation and system configurations via the state-of-the-art curved center console display, built to withstand extreme vibrations.</p>
+            
+            <div class="flex gap-6 mt-6 pt-6 border-t border-white/10 text-xs text-gray-300">
+              <div>
+                <span class="block text-gray-500 font-bold uppercase text-[9px] tracking-wider">Resolution</span>
+                <span class="font-bold text-white text-sm" id="spec-1">2.5K Ultra HD</span>
+              </div>
+              <div>
+                <span class="block text-gray-500 font-bold uppercase text-[9px] tracking-wider">Response Time</span>
+                <span class="font-bold text-white text-sm" id="spec-2">&lt; 10ms Latency</span>
+              </div>
+              <div>
+                <span class="block text-gray-500 font-bold uppercase text-[9px] tracking-wider">Audio System</span>
+                <span class="font-bold text-white text-sm" id="spec-3">14-Speaker Sony Sound</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section id="why-valor" class="bg-[#111111] text-white py-28 relative overflow-hidden">
+
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute w-[500px] h-[500px] bg-[#C0392B] blur-[160px] rounded-full -top-40 -right-40"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div data-aos="fade-right">
+
+          <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-5">
+            Why Valor Motors
+          </p>
+
+          <h2 class="heading-font text-6xl uppercase leading-none">
+            Dominance <br> In Every Terrain
+          </h2>
+
+          <p class="text-gray-400 text-lg leading-relaxed mt-8 max-w-xl">
+            Every tactical SUV and rugged machine is hand-selected, rigorously tested for ultimate capability, and meticulously detailed for those who command the road.
+          </p>
+
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+
+          <div class="glass border border-white/10 rounded-[28px] p-8">
+            <h3 class="text-4xl font-bold text-[#C0392B]">98%</h3>
+            <p class="mt-4 text-gray-300">
+              Client Satisfaction
+            </p>
+          </div>
+
+          <div class="glass border border-white/10 rounded-[28px] p-8">
+            <h3 class="text-4xl font-bold text-[#C0392B]">24/7</h3>
+            <p class="mt-4 text-gray-300">
+              Expedition Support
+            </p>
+          </div>
+
+          <div class="glass border border-white/10 rounded-[28px] p-8">
+            <h3 class="text-4xl font-bold text-[#C0392B]">150+</h3>
+            <p class="mt-4 text-gray-300">
+              Rugged Luxury SUVs
+            </p>
+          </div>
+
+          <div class="glass border border-white/10 rounded-[28px] p-8">
+            <h3 class="text-4xl font-bold text-[#C0392B]">12+</h3>
+            <p class="mt-4 text-gray-300">
+              Years Elite Experience
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & LOCATION SHOWROOM (GEOGRAPHICAL EMBED) -->
+  <section id="about" class="py-28 bg-white text-black border-t border-gray-100 relative overflow-hidden">
+    
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute w-[500px] h-[500px] bg-[#C0392B] blur-[180px] rounded-full -bottom-40 -left-40"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      
+      <div class="grid lg:grid-cols-12 gap-16 items-center">
+        
+        <!-- Left: Location & Showroom details (col-span 5) -->
+        <div class="lg:col-span-5" data-aos="fade-right">
+          
+          <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-4 font-semibold">
+            VALOR FLAGSHIP SHOWROOM
+          </p>
+
+          <h2 class="heading-font text-5xl lg:text-6xl uppercase leading-none mb-6 text-black">
+            Visit Our <br> Showroom
+          </h2>
+
+          <p class="text-gray-600 text-base leading-relaxed mb-8">
+            Experience our ₵500,000+ luxury tactical SUV lineup in person. Our state-of-the-art physical showroom is strategically located near the Ashaiman China Mall, situated directly between the SSNIT building and the Fire Service Station.
+          </p>
+
+          <!-- Detail items -->
+          <div class="space-y-6">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-[#C0392B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-black">Physical Location</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Ashaiman Motorway Link, Near China Mall,<br>
+                  Between SSNIT Building and Fire Service Station,<br>
+                  Ashaiman - Tema, Ghana.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-[#C0392B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-black">Showroom Hours</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Monday – Sunday: 8:00 AM – 8:00 PM<br>
+                  <span class="text-[#C0392B] font-semibold">Private VIP showroom tours by appointment.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6 text-[#C0392B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-black">Direct Line</h4>
+                <p class="text-gray-600 text-sm mt-1">
+                  Hotline: +233 (0) 50 000 0000<br>
+                  WhatsApp: +233 (0) 54 123 4567
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Google Map Embed (col-span 7) -->
+        <div class="lg:col-span-7 w-full h-[450px]" data-aos="fade-left">
+          <div class="w-full h-full rounded-[32px] overflow-hidden border border-gray-200 shadow-2xl relative bg-white">
+            <!-- Real Google Map focused near China Mall, SSNIT & Fire Station (Ashaiman) -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.6120530752533!2d-0.0384877!3d5.697424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf7b3fc4b44917%3A0xc0391d1e4bf37d12!2sAshaiman%20Fire%20Station!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              class="w-full h-full">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="contact" class="py-32 bg-white">
+
+    <div class="max-w-5xl mx-auto text-center px-6">
+
+      <p class="uppercase tracking-[4px] text-[#C0392B] text-sm mb-5">
+        Begin Your Journey
+      </p>
+
+      <h2 class="heading-font text-6xl md:text-8xl uppercase leading-none">
+        Rugged Power <br> Meets Supreme Luxury
+      </h2>
+
+      <p class="text-gray-600 max-w-2xl mx-auto mt-8 text-lg leading-relaxed">
+        Discover an elite off-road automotive experience tailored for drivers who refuse to settle. Schedule a private viewing or test drive today.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-200 py-10 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row justify-between items-center gap-5">
+
+      <div>
+        <h3 class="heading-font text-3xl leading-none">
+          VALOR MOTORS
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Rugged power. Supreme luxury. Meticulously engineered.
+        </p>
+      </div>
+
+      <div class="flex gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-[#C0392B]">Instagram</a>
+        <a href="#inventory" class="hover:text-[#C0392B]">Inventory</a>
+        <a href="#about" class="hover:text-[#C0392B]">Location</a>
+        <a href="#contact" class="hover:text-[#C0392B]">Contact</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- DYNAMIC GALLERY JAVASCRIPT -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const galleryData = {
+      screen: {
+        img: 'public/cockpit_dashboard.png',
+        badge: '8-Core Snapdragon Chipset',
+        title: '15.6-Inch Panoramic Cockpit',
+        desc: 'Experience lag-free navigation and system configurations via the state-of-the-art curved center console display, built to withstand extreme off-road vibrations.',
+        spec1: '2.5K Ultra HD',
+        spec2: '< 10ms Latency',
+        spec3: '14-Speaker Sony Sound'
+      },
+      cabin: {
+        img: 'public/cabin_seating.png',
+        badge: 'Genuine Nappa Leather',
+        title: 'First-Class SUV Seating',
+        desc: 'Bespoke hand-stitched seating with 8-point muscle massage systems, ventilated heating cushions, and personalized lumbar support for the most demanding overland trips.',
+        spec1: 'Nappa Hide',
+        spec2: '8 Massage Modes',
+        spec3: 'Ozone Filtration'
+      },
+      console: {
+        img: 'public/center_console.png',
+        badge: 'Diff Lock Control Panel',
+        title: 'Tactical Center Console',
+        desc: 'Direct physical command toggles for front/rear electronic differential locks, all-terrain selection modes, and high-clearance pneumatic ride-height controls.',
+        spec1: 'Triple Diff Locks',
+        spec2: 'Dual Ambient LED',
+        spec3: 'Aviation Toggles'
+      }
+    };
+
+    function switchTab(tabKey) {
+      // Get all buttons and reset their styles
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('border-[#C0392B]', 'bg-[#C0392B]/5');
+        btn.classList.add('border-transparent', 'bg-gray-50');
+        // Reset subheader color
+        btn.querySelector('span').classList.remove('text-[#C0392B]');
+        btn.querySelector('span').classList.add('text-gray-400');
+      });
+
+      // Style active button
+      const activeBtn = document.getElementById('btn-' + tabKey);
+      activeBtn.classList.remove('border-transparent', 'bg-gray-50');
+      activeBtn.classList.add('border-[#C0392B]', 'bg-[#C0392B]/5');
+      activeBtn.querySelector('span').classList.remove('text-gray-400');
+      activeBtn.querySelector('span').classList.add('text-[#C0392B]');
+
+      // Transition image & text with smooth opacity fade
+      const img = document.getElementById('gallery-img');
+      img.style.opacity = 0;
+
+      setTimeout(() => {
+        const data = galleryData[tabKey];
+        img.src = data.img;
+        document.getElementById('gallery-spec-badge').innerText = data.badge;
+        document.getElementById('gallery-title').innerText = data.title;
+        document.getElementById('gallery-desc').innerText = data.desc;
+        document.getElementById('spec-1').innerText = data.spec1;
+        document.getElementById('spec-2').innerText = data.spec2;
+        document.getElementById('spec-3').innerText = data.spec3;
+        img.style.opacity = 1;
+      }, 200);
+    }
+  </script>
+
+</body>
+</html>
